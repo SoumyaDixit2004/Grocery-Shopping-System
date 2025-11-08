@@ -1,0 +1,218 @@
+/* 🌐 Global Styles */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌈 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo span {
+  color: #10b981;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #10b981;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  top: 120%;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: #f3f4f6;
+}
+
+/* 🧾 Auth Pages */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #ecfdf5);
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+form input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+}
+
+.password-field span {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #059669;
+}
+
+.msg {
+  color: #16a34a;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* 🏠 Home Page */
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85vh;
+  background: linear-gradient(to right, #ecfdf5, #d1fae5);
+  border-radius: 12px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.welcome-section {
+  max-width: 50%;
+}
+
+.primary-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #059669;
+}
+
+/* 🛒 Grocery Page */
+.grocery-container {
+  padding: 2rem;
+}
+
+.grocery-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.grocery-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grocery-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.8rem;
+}
+.grocery-item button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* 🧺 Cart Summary */
+.cart-summary {
+  background: #ecfdf5;
+  border: 2px solid #10b981;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h3 {
+  margin-bottom: 0.5rem;
+  color: #065f46;
+}
+
+.cart-summary p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  color: #064e3b;
+}
+.grocery-item button:hover {
+  background: #dc2626;
+}

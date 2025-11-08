@@ -1,0 +1,32 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85vh;
+  background: linear-gradient(to right, #ecfdf5, #d1fae5);
+  border-radius: 12px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.welcome-section {
+  max-width: 50%;
+}
+
+.image-section img {
+  width: 250px;
+}
+
+.primary-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #059669;
+}
